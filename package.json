@@ -1,0 +1,37 @@
+{
+  "name": "phasertemplate",
+  "version": "1.0.0",
+  "description": "A Phaser 3 Project Template",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "phaser": "^3.0.0-beta.12"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.12.1",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-mocha": "^4.11.0",
+    "eslint-plugin-node": "^5.2.1",
+    "file-loader": "^1.1.5",
+    "group-css-media-queries-loader": "^1.0.4",
+    "mocha": "^4.0.1",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.9.1",
+    "webpack-dev-server": "^2.9.5"
+  },
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "mocha --compilers js:babel-core/register --require babel-polyfill tests/*.spec.js",
+    "build": "webpack --config webpack.config.prod.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
